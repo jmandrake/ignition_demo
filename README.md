@@ -1,6 +1,6 @@
 # Ignition Demo Project & Learning Modules
 
-## Set up your environment. Tips for Windows users:
+## Set up your virtual environment with Python 2.7. Tips for Windows users:
 
 - Create a new repository on Github. Use .gitignore for python.
 - Create a new project in Ignition and open the Ignition project's folder on your PC.
