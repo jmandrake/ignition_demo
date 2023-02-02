@@ -1,0 +1,443 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 808,
+      "width": 811
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "LedDisplay"
+        },
+        "position": {
+          "height": 32,
+          "width": 128,
+          "x": 71,
+          "y": 580.5
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "publishInitial": false,
+                "tagPath": "[default]Devices/_Test_/Sine"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "type": "ia.display.led-display"
+      },
+      {
+        "meta": {
+          "name": "SimpleGauge"
+        },
+        "position": {
+          "height": 132,
+          "width": 255,
+          "x": 17,
+          "y": 51.5
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "publishInitial": false,
+                "tagPath": "[default]Devices/_Sample_Device_/Overview/Motor 1/Amps"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "classes": []
+          }
+        },
+        "type": "ia.chart.simple-gauge"
+      },
+      {
+        "meta": {
+          "name": "CylindricalTank"
+        },
+        "position": {
+          "height": 258,
+          "width": 211,
+          "x": 38.5,
+          "y": 183.5
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "publishInitial": false,
+                "tagPath": "[default]Devices/_Sample_Device_/Overview/Motor 5/Amps"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "capacity": 300,
+          "liquidColor": "#95F535",
+          "tankColor": "#D8A8DA",
+          "valueDisplay": {
+            "key": "value"
+          }
+        },
+        "type": "ia.display.cylindrical-tank"
+      },
+      {
+        "meta": {
+          "name": "Icon"
+        },
+        "position": {
+          "height": 110,
+          "width": 124,
+          "x": 75,
+          "y": 455
+        },
+        "propConfig": {
+          "props.color": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]Devices/_Test_/Sine.value"
+              },
+              "transforms": [
+                {
+                  "fallback": "#FFFF00",
+                  "inputType": "range",
+                  "mappings": [
+                    {
+                      "input": {
+                        "max": 5,
+                        "min": 0
+                      },
+                      "output": "#00D900"
+                    },
+                    {
+                      "input": {
+                        "max": 100,
+                        "min": 5.1
+                      },
+                      "output": "#FF0000"
+                    }
+                  ],
+                  "outputType": "color",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "path": "material/warning"
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 32,
+          "width": 50,
+          "x": 112,
+          "y": 548.5
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "publishInitial": false,
+                "tagPath": "[default]Devices/_Test_/Sine"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "HorizontalMenu"
+        },
+        "position": {
+          "height": 46,
+          "width": 802
+        },
+        "props": {
+          "items": [
+            {
+              "enabled": true,
+              "icon": {
+                "path": ""
+              },
+              "items": [
+                {
+                  "enabled": true,
+                  "icon": {
+                    "color": "",
+                    "path": "material/link"
+                  },
+                  "items": [],
+                  "label": "Link to Google",
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "http://www.google.com"
+                }
+              ],
+              "label": "Main Page",
+              "style": {
+                "classes": ""
+              },
+              "target": "/main_view"
+            },
+            {
+              "enabled": true,
+              "icon": {
+                "color": "",
+                "path": "material/link"
+              },
+              "items": [],
+              "label": "Main Page",
+              "style": {
+                "classes": ""
+              },
+              "target": "/"
+            },
+            {
+              "enabled": false,
+              "icon": {
+                "path": ""
+              },
+              "items": [],
+              "label": "Disabled Menu Item",
+              "style": {
+                "classes": ""
+              },
+              "target": ""
+            },
+            {
+              "enabled": true,
+              "icon": {
+                "path": ""
+              },
+              "items": [],
+              "label": "Testing",
+              "style": {
+                "classes": ""
+              },
+              "target": "/testing"
+            }
+          ]
+        },
+        "type": "ia.navigation.horizontalmenu"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "page": "/testing"
+              },
+              "scope": "C",
+              "type": "nav"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button"
+        },
+        "position": {
+          "height": 34,
+          "width": 191,
+          "x": 593,
+          "y": 6
+        },
+        "props": {
+          "text": "Testing"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "LedDisplay_0"
+        },
+        "position": {
+          "height": 98,
+          "width": 389,
+          "x": 394.5,
+          "y": 57
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "expression": "dateFormat(now(), \"HH:mm:ss\")"
+              },
+              "overlayOptOut": true,
+              "type": "expr"
+            }
+          }
+        },
+        "type": "ia.display.led-display"
+      },
+      {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\tif (self.props.value \u003d\u003d 85):\n\t\tself.getSibling(\"Icon_0\").props.color \u003d \"green\"\n\telse:\n\t\tself.getSibling(\"Icon_0\").props.color \u003d \"red\""
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "slider1"
+        },
+        "position": {
+          "height": 32,
+          "width": 491,
+          "x": 282,
+          "y": 262
+        },
+        "props": {
+          "labels": {
+            "interval": 5,
+            "show": true
+          },
+          "value": 85
+        },
+        "type": "ia.input.slider"
+      },
+      {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\tif self.props.value \u003d\u003d 7:\n\t\tself.getSibling(\"Icon_1\").props.color \u003d \"green\"\n\telse:\n\t\tself.getSibling(\"Icon_1\").props.color \u003d \"red\""
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "slider2"
+        },
+        "position": {
+          "height": 32,
+          "width": 491,
+          "x": 282,
+          "y": 383.5
+        },
+        "props": {
+          "labels": {
+            "interval": 1,
+            "show": true
+          },
+          "max": 10,
+          "value": 3
+        },
+        "type": "ia.input.slider"
+      },
+      {
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "height": 32,
+          "width": 327,
+          "x": 364,
+          "y": 214
+        },
+        "props": {
+          "style": {
+            "textAlignLast": "center"
+          },
+          "text": "Ingredient 1 (85 gr)",
+          "textStyle": {
+            "alignContent": "center"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_1"
+        },
+        "position": {
+          "height": 32,
+          "width": 327,
+          "x": 364,
+          "y": 337
+        },
+        "props": {
+          "style": {
+            "textAlignLast": "center"
+          },
+          "text": "Ingredient 2 (7 gr)",
+          "textStyle": {
+            "alignContent": "center"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Icon_0"
+        },
+        "position": {
+          "height": 51,
+          "width": 62,
+          "x": 610,
+          "y": 204.5
+        },
+        "props": {
+          "color": "green",
+          "path": "material/check_circle"
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "Icon_1"
+        },
+        "position": {
+          "height": 51,
+          "width": 62,
+          "x": 610,
+          "y": 327.5
+        },
+        "props": {
+          "color": "red",
+          "path": "material/check_circle"
+        },
+        "type": "ia.display.icon"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

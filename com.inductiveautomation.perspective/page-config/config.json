@@ -1,0 +1,14 @@
+{
+  "pages": {
+    "/": {
+      "viewPath": "Main_View"
+    },
+    "/testing": {
+      "title": "test",
+      "viewPath": "Testing"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "left-right"
+  }
+}

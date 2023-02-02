@@ -1,0 +1,16 @@
+{
+  "scope": "A",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "data.bin"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "ignition",
+      "timestamp": "2023-02-01T06:47:40Z"
+    },
+    "lastModificationSignature": "d14ab0ce63c4a42eb092c45923a6e36054ebf043b34329124fd4209737b598cc"
+  }
+}

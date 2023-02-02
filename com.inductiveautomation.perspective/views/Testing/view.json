@@ -1,0 +1,124 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "HorizontalMenu"
+        },
+        "position": {
+          "basis": "46px"
+        },
+        "props": {
+          "items": [
+            {
+              "enabled": true,
+              "icon": {
+                "path": ""
+              },
+              "items": [
+                {
+                  "enabled": true,
+                  "icon": {
+                    "color": "",
+                    "path": "material/link"
+                  },
+                  "items": [],
+                  "label": "Link to Google",
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "http://www.google.com"
+                }
+              ],
+              "label": "Main Page",
+              "style": {
+                "classes": ""
+              },
+              "target": "/main_view"
+            },
+            {
+              "enabled": true,
+              "icon": {
+                "color": "",
+                "path": "material/link"
+              },
+              "items": [],
+              "label": "Main Page",
+              "style": {
+                "classes": ""
+              },
+              "target": "/"
+            },
+            {
+              "enabled": false,
+              "icon": {
+                "path": ""
+              },
+              "items": [],
+              "label": "Disabled Menu Item",
+              "style": {
+                "classes": ""
+              },
+              "target": ""
+            },
+            {
+              "enabled": true,
+              "icon": {
+                "path": ""
+              },
+              "items": [],
+              "label": "Testing",
+              "style": {
+                "classes": ""
+              },
+              "target": "/testing"
+            }
+          ]
+        },
+        "type": "ia.navigation.horizontalmenu"
+      },
+      {
+        "meta": {
+          "name": "IFrame"
+        },
+        "position": {
+          "basis": "443px"
+        },
+        "props": {
+          "referrerPolicy": "origin",
+          "src": "https://www.youtube.com/embed/Z6dIdJX4ens"
+        },
+        "type": "ia.display.iframe"
+      },
+      {
+        "meta": {
+          "name": "TextField"
+        },
+        "position": {
+          "basis": "32px"
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "page.props.pageId"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "type": "ia.input.text-field"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

@@ -1,0 +1,1 @@
+SELECT * FROM sqlt_data_1_2023_02
