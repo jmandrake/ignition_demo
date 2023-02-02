@@ -1,0 +1,10 @@
+# yapf is an alternative to black for formatting python 2.7 code
+yapf==0.32.0
+ipdb==0.13.11
+# pylint requires python 3 for versions 2.0 and above.
+pylint==1.9.3
+# pytest requires python 3 for versions > 4.6.x
+pytest==4.6.11
+# pytest-cov requires python 3 for versions 3.0 and above
+pytest-cov==2.12.1
+ignition-api==8.1.24
