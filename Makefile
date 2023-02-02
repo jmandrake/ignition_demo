@@ -3,13 +3,13 @@ install:
 	pip install -r requirements.txt
 
 format:
-	black *.py scripts/*.py
+	yapf --in-place --recursive --style="{indent_width: 4}" *.py scripts/
 
 lint:
-	pylint --disable=R,C scripts
+	pylint --disable=R,C scripts/
 
 test:
-	python -m pytest -vv scripts/*.py
+	python -m pytest -vv scripts/
 	
 debug:
 	python -m pytest -vv --pdb --cov=scripts --cov=tests
