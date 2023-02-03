@@ -1,10 +1,18 @@
 {
   "custom": {},
-  "params": {},
+  "params": {
+    "level": 50
+  },
+  "propConfig": {
+    "params.level": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
   "props": {
     "defaultSize": {
-      "height": 808,
-      "width": 811
+      "height": 885,
+      "width": 825
     }
   },
   "root": {
@@ -14,10 +22,10 @@
           "name": "LedDisplay"
         },
         "position": {
-          "height": 32,
-          "width": 128,
-          "x": 71,
-          "y": 580.5
+          "height": 0.0362,
+          "width": 0.1552,
+          "x": 0.2412,
+          "y": 0.5395
         },
         "propConfig": {
           "props.value": {
@@ -39,10 +47,10 @@
           "name": "SimpleGauge"
         },
         "position": {
-          "height": 132,
-          "width": 255,
-          "x": 17,
-          "y": 51.5
+          "height": 0.1492,
+          "width": 0.3091,
+          "x": 0.0206,
+          "y": 0.0582
         },
         "propConfig": {
           "props.value": {
@@ -69,10 +77,10 @@
           "name": "CylindricalTank"
         },
         "position": {
-          "height": 258,
-          "width": 211,
-          "x": 38.5,
-          "y": 183.5
+          "height": 0.2915,
+          "width": 0.2558,
+          "x": 0.0467,
+          "y": 0.2073
         },
         "propConfig": {
           "props.value": {
@@ -102,10 +110,10 @@
           "name": "Icon"
         },
         "position": {
-          "height": 110,
-          "width": 124,
-          "x": 75,
-          "y": 455
+          "height": 0.1243,
+          "width": 0.1503,
+          "x": 0.0909,
+          "y": 0.5141
         },
         "propConfig": {
           "props.color": {
@@ -153,10 +161,10 @@
           "name": "Label"
         },
         "position": {
-          "height": 32,
-          "width": 50,
-          "x": 112,
-          "y": 548.5
+          "height": 0.0362,
+          "width": 0.0606,
+          "x": 0.1358,
+          "y": 0.6198
         },
         "propConfig": {
           "props.text": {
@@ -178,8 +186,8 @@
           "name": "HorizontalMenu"
         },
         "position": {
-          "height": 46,
-          "width": 802
+          "height": 0.052,
+          "width": 0.9721
         },
         "props": {
           "items": [
@@ -266,10 +274,10 @@
           "name": "Button"
         },
         "position": {
-          "height": 34,
-          "width": 191,
-          "x": 593,
-          "y": 6
+          "height": 0.0384,
+          "width": 0.2315,
+          "x": 0.7188,
+          "y": 0.0068
         },
         "props": {
           "text": "Testing"
@@ -281,10 +289,10 @@
           "name": "LedDisplay_0"
         },
         "position": {
-          "height": 98,
-          "width": 389,
-          "x": 394.5,
-          "y": 57
+          "height": 0.1107,
+          "width": 0.4715,
+          "x": 0.4782,
+          "y": 0.0644
         },
         "propConfig": {
           "props.value": {
@@ -315,10 +323,10 @@
           "name": "slider1"
         },
         "position": {
-          "height": 32,
-          "width": 491,
-          "x": 282,
-          "y": 262
+          "height": 0.0362,
+          "width": 0.5952,
+          "x": 0.3418,
+          "y": 0.296
         },
         "props": {
           "labels": {
@@ -345,10 +353,10 @@
           "name": "slider2"
         },
         "position": {
-          "height": 32,
-          "width": 491,
-          "x": 282,
-          "y": 383.5
+          "height": 0.0362,
+          "width": 0.5952,
+          "x": 0.3418,
+          "y": 0.4333
         },
         "props": {
           "labels": {
@@ -365,10 +373,10 @@
           "name": "Label_0"
         },
         "position": {
-          "height": 32,
-          "width": 327,
-          "x": 364,
-          "y": 214
+          "height": 0.0362,
+          "width": 0.3964,
+          "x": 0.4412,
+          "y": 0.2418
         },
         "props": {
           "style": {
@@ -386,10 +394,10 @@
           "name": "Label_1"
         },
         "position": {
-          "height": 32,
-          "width": 327,
-          "x": 364,
-          "y": 337
+          "height": 0.0362,
+          "width": 0.3964,
+          "x": 0.4412,
+          "y": 0.3808
         },
         "props": {
           "style": {
@@ -407,10 +415,10 @@
           "name": "Icon_0"
         },
         "position": {
-          "height": 51,
-          "width": 62,
-          "x": 610,
-          "y": 204.5
+          "height": 0.0576,
+          "width": 0.0752,
+          "x": 0.7394,
+          "y": 0.2311
         },
         "props": {
           "color": "green",
@@ -423,20 +431,35 @@
           "name": "Icon_1"
         },
         "position": {
-          "height": 51,
-          "width": 62,
-          "x": 610,
-          "y": 327.5
+          "height": 0.0576,
+          "width": 0.0752,
+          "x": 0.7394,
+          "y": 0.3701
         },
         "props": {
           "color": "red",
           "path": "material/check_circle"
         },
         "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "AlarmStatusTable"
+        },
+        "position": {
+          "height": 0.3107,
+          "width": 0.9139,
+          "x": 0.0358,
+          "y": 0.6644
+        },
+        "type": "ia.display.alarmstatustable"
       }
     ],
     "meta": {
       "name": "root"
+    },
+    "props": {
+      "mode": "percent"
     },
     "type": "ia.container.coord"
   }

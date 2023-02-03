@@ -24,6 +24,7 @@ You should be all set to run python 2.7 to develop and test your code.
 - [Ignition-api Docs on github](https://github.com/ignition-api/8.1)
 - [Ignition 8.1 User Manual](https://docs.inductiveautomation.com/display/DOC81)
 - [Ignition Community Exchange](https://www.inductiveautomation.com/exchange/)
+- [Ignition Youtube Channel](https://www.youtube.com/@InductiveAutomation)
 - [Ignition Applications Gallery](https://icc.inductiveautomation.com/discover-gallery)
 - [Ignition 8 Deployment Best Practices](https://www.inductiveautomation.com/resources/article/ignition-8-deployment-best-practices)
 - [Connecting disparate industrial systems to AWS using Ignition Edge](https://aws.amazon.com/blogs/iot/connecting-disparate-industrial-systems-to-aws-using-ignition-edge/)

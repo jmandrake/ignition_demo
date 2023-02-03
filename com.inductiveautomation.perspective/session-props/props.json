@@ -1,5 +1,7 @@
 {
-  "custom": {},
+  "custom": {
+    "mytext": "asdfasd"
+  },
   "propConfig": {
     "props.auth": {
       "access": "PRIVATE",
@@ -51,7 +53,7 @@
     }
   },
   "props": {
-    "address": "[0:0:0:0:0:0:0:1]",
+    "address": "127.0.0.1",
     "device": {},
     "geolocation": {},
     "locale": "en-US",
