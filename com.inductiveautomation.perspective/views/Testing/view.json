@@ -1,137 +1,26 @@
 {
   "custom": {},
   "params": {},
-  "props": {},
+  "props": {
+    "defaultSize": {
+      "height": 628
+    }
+  },
   "root": {
     "children": [
-      {
-        "meta": {
-          "name": "HorizontalMenu"
-        },
-        "position": {
-          "basis": "46px"
-        },
-        "props": {
-          "items": [
-            {
-              "enabled": true,
-              "icon": {
-                "path": ""
-              },
-              "items": [
-                {
-                  "enabled": true,
-                  "icon": {
-                    "color": "",
-                    "path": "material/link"
-                  },
-                  "items": [],
-                  "label": "Link to Google",
-                  "style": {
-                    "classes": ""
-                  },
-                  "target": "http://www.google.com"
-                }
-              ],
-              "label": "Main Page",
-              "style": {
-                "classes": ""
-              },
-              "target": "/main_view"
-            },
-            {
-              "enabled": true,
-              "icon": {
-                "color": "",
-                "path": "material/link"
-              },
-              "items": [],
-              "label": "Main Page",
-              "style": {
-                "classes": ""
-              },
-              "target": "/"
-            },
-            {
-              "enabled": false,
-              "icon": {
-                "path": ""
-              },
-              "items": [],
-              "label": "Disabled Menu Item",
-              "style": {
-                "classes": ""
-              },
-              "target": ""
-            },
-            {
-              "enabled": true,
-              "icon": {
-                "path": ""
-              },
-              "items": [],
-              "label": "Testing",
-              "style": {
-                "classes": ""
-              },
-              "target": "/testing"
-            }
-          ]
-        },
-        "type": "ia.navigation.horizontalmenu"
-      },
       {
         "meta": {
           "name": "IFrame"
         },
         "position": {
-          "basis": "443px"
+          "basis": "506px",
+          "grow": 1
         },
         "props": {
           "referrerPolicy": "origin",
-          "src": "https://www.youtube.com/embed/Z6dIdJX4ens"
+          "src": "https://www.youtube.com/embed/ipf7ifVSeDU"
         },
         "type": "ia.display.iframe"
-      },
-      {
-        "meta": {
-          "name": "TextField"
-        },
-        "position": {
-          "basis": "32px"
-        },
-        "propConfig": {
-          "props.text": {
-            "binding": {
-              "config": {
-                "path": "page.props.pageId"
-              },
-              "type": "property"
-            }
-          }
-        },
-        "type": "ia.input.text-field"
-      },
-      {
-        "meta": {
-          "name": "Image"
-        },
-        "position": {
-          "basis": "100px"
-        },
-        "props": {
-          "source": "/system/images/Builtin/icons/48/calculator.png"
-        },
-        "type": "ia.display.image"
-      },
-      {
-        "meta": {
-          "name": "FlexContainer"
-        },
-        "position": {
-          "basis": "200px"
-        },
-        "type": "ia.container.flex"
       },
       {
         "meta": {
@@ -178,6 +67,17 @@
         "type": "ia.input.text-field"
       },
       {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\tself.getSibling(\"IFrame\").props.src \u003d \"https://www.youtube.com/embed/sKA8Uu4SyHc\""
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
         "meta": {
           "name": "Button_0"
         },
@@ -185,11 +85,22 @@
           "basis": "34px"
         },
         "props": {
-          "text": 3
+          "text": "Video 1"
         },
         "type": "ia.input.button"
       },
       {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\tself.getSibling(\"IFrame\").props.src \u003d \"https://www.youtube.com/embed/p0QsOsku2gk\""
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
         "meta": {
           "name": "Button_2"
         },
@@ -197,11 +108,22 @@
           "basis": "34px"
         },
         "props": {
-          "text": 2
+          "text": "Video 2"
         },
         "type": "ia.input.button"
       },
       {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\tself.getSibling(\"IFrame\").props.src \u003d \"https://www.youtube.com/embed/ipf7ifVSeDU\""
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
         "meta": {
           "name": "Button_3"
         },
@@ -209,7 +131,7 @@
           "basis": "34px"
         },
         "props": {
-          "text": 1
+          "text": "Video 3"
         },
         "type": "ia.input.button"
       }

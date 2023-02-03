@@ -4,7 +4,12 @@
       "viewPath": "Main_View"
     },
     "/charts": {
+      "title": "",
       "viewPath": "Charts"
+    },
+    "/flex_layout": {
+      "title": "Flex Layout",
+      "viewPath": "Flex_Layout"
     },
     "/testing": {
       "title": "test",

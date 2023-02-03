@@ -289,10 +289,10 @@
           "name": "LedDisplay_0"
         },
         "position": {
-          "height": 0.1107,
-          "width": 0.4715,
-          "x": 0.4782,
-          "y": 0.0644
+          "height": 0.0757,
+          "width": 0.3103,
+          "x": 0.6406,
+          "y": 0.061
         },
         "propConfig": {
           "props.value": {

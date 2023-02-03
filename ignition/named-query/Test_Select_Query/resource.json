@@ -18,7 +18,7 @@
     "cacheEnabled": false,
     "database": "postgres_local",
     "fallbackEnabled": false,
-    "lastModificationSignature": "76ca8797b2af18d9d33eb0df266650696069e5ebe70edebd8f9d0f0554227af0",
+    "lastModificationSignature": "3e7c1413594b4cd73a9685502f5ee4e9538d37316ee755a7a590fdeb99f7f620",
     "permissions": [
       {
         "zone": "Default",
@@ -27,18 +27,13 @@
     ],
     "lastModification": {
       "actor": "ignition",
-      "timestamp": "2023-02-02T18:49:13Z"
+      "timestamp": "2023-02-03T04:39:26Z"
     },
     "parameters": [
       {
         "type": "Parameter",
         "identifier": "myValueX",
         "sqlType": 7
-      },
-      {
-        "type": "Parameter",
-        "identifier": "myValueY",
-        "sqlType": 2
       }
     ]
   }
