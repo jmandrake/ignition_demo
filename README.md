@@ -7,10 +7,10 @@
 - Open VS Code as Administrator and open the folder. Use git init and git clone to download the repo files.
 - Copy the .git folder and readme file up one level. Delete the folder you just downloaded.  
 - Create a virtual environment that uses Python 2.7. Ignition does not currently support Python 3.x
--- >> virtualenv --python=C:\Python27\python.exe venv
--- Substitute the path to Python 2.7 with your own
--- >> . venv/scripts/activate
--- >> python -V
+    -- >> virtualenv --python=C:\Python27\python.exe venv
+    -- Substitute the path to Python 2.7 with your own
+    -- >> . venv/scripts/activate
+    -- >> python -V
 
 You should be all set to run python 2.7 to develop and test your code.
 
@@ -28,3 +28,5 @@ You should be all set to run python 2.7 to develop and test your code.
 - [Ignition Applications Gallery](https://icc.inductiveautomation.com/discover-gallery)
 - [Ignition 8 Deployment Best Practices](https://www.inductiveautomation.com/resources/article/ignition-8-deployment-best-practices)
 - [Connecting disparate industrial systems to AWS using Ignition Edge](https://aws.amazon.com/blogs/iot/connecting-disparate-industrial-systems-to-aws-using-ignition-edge/)
+
+## 

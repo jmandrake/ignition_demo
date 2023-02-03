@@ -114,6 +114,18 @@
       },
       {
         "meta": {
+          "name": "Image"
+        },
+        "position": {
+          "basis": "100px"
+        },
+        "props": {
+          "source": "/system/images/Builtin/icons/48/calculator.png"
+        },
+        "type": "ia.display.image"
+      },
+      {
+        "meta": {
           "name": "FlexContainer"
         },
         "position": {

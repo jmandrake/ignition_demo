@@ -3,6 +3,9 @@
     "/": {
       "viewPath": "Main_View"
     },
+    "/charts": {
+      "viewPath": "Charts"
+    },
     "/testing": {
       "title": "test",
       "viewPath": "Testing"
